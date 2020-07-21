@@ -9,3 +9,7 @@ Userscript for converting LaTeX commands for math symbols to their unicode equiv
 * Press `ALT+X` while your caret is in a LaTeX shortcut to convert that command to unicode.
 
 ![usage](https://i.imgur.com/SqruREz.png)
+
+### Install on Greasy Fork
+
+https://greasyfork.org/en/scripts/407525-latex-unicode-shortcuts
