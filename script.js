@@ -46,7 +46,7 @@
         convert = function (text) {
             var result = text.replace(/{([A-Za-z0-9])}/g, '$1'); // {R} => R
             for (var key in dictionary) {
-                var pattern = new RegExp(key.replace(/([[^$.|\\?*+(){}])/g, '\\$1'), 'g'); // clean and escape key
+                var pattern = new RegExp(key.replace(/([[^$.|\\?*+(){}])/g, '\\$1') + "\\b", 'g'); // clean and escape key
                 var replaced = result.replace(pattern, dictionary[key]);
                 if (replaced.length < result.length) {
                     result = replaced;
